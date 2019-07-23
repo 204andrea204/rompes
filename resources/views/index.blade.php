@@ -15,10 +15,10 @@
 							<h6>{!! $q->pengantar1 !!}</h6>
 							<span class="bar"></span>
 							<h1 class="text-white">
-								{!! $q->pengantar2 !!}<br>
+								{!! $q->pengantar2 !!}
 								{!! $q->pengantar3 !!}
 							</h1>
-							<a href="#" class="genric-btn">Book Consultancy</a>
+							<a href="#" class="genric-btn">..............</a>
 						</div>
 					</div>
 				</div>
@@ -107,49 +107,19 @@
 				<div class="container-fluid">
 					<div class="row no-padding">
 						<div class="active-gallery">
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g1.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>	
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g2.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>	
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g3.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>	
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g4.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>	
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g5.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>	
-							<div class="item single-gallery">
-							    <div class="thumb">
-							        <img src="{{asset('cbi_user/img/g6.jpg')}}" alt="">
-							        <div class="align-items-center justify-content-center d-flex">
-							        </div>
-							    </div>
-							</div>								
+							<?php
+              $galery = \App\Gallery::all(); 
+               ?>
+               @foreach($galery as $q)
 
+							<div class="item single-gallery">
+							    <div class="thumb">
+							        <img src="{{ url('images/'.$q->gambar)}}" alt="">
+							        <div class="align-items-center justify-content-center d-flex">
+							        </div>
+							    </div>
+							</div>							
+				@endforeach
 						</div>
 					</div>
 				</div>	

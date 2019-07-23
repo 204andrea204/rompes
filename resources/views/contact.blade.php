@@ -3,7 +3,7 @@
 <!-- start banner Area -->
 			
 
-			<!-- Start contact-page Area --><br><br>
+			<!-- Start contact-page Area --><br><br><br>
 			<section class="contact-page-area section-gap">
 
 <h1 class="mb-10 header-text text-center">Contact</h1>

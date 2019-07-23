@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    <title>Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -70,7 +70,7 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar" >
                 <div class="sidebar-header">
-                    <a href="#"><img src="{{url('images/201901221613065c4741121bc1f.jpg')}}" alt="" style="width: 150px;height: 150px;" />
+                    <a href="#"><img src="{{url('images/rompes.jpg')}}" alt="" style="width: 160px;height: 160px;" />
                     </a>
                     <h3>{{ Auth::user()->name }}</h3>
                     <strong>CP</strong>
@@ -89,6 +89,9 @@
                         </li>
                         <li class="nav-item"><a href="{{url('/admin/visimisi')}}"><i class="fa fa-envelope"></i>
                             <span class="mini-dn">Visi Misi</span> <span class="indicator-right-menu"></span></a>
+                        </li>
+                        <li class="nav-item"><a href="{{url('/admin/pelatihan2')}}"><i class="fa fa-envelope"></i>
+                            <span class="mini-dn">Pelatihan</span> <span class="indicator-right-menu"></span></a>
                         </li>
                         <li class="nav-item"><a href="{{url('admin/gallery2')}}"><i class="fa fa-image"></i>
                             <span class="mini-dn">Gallery</span> <span class="indicator-right-menu"></span></a>

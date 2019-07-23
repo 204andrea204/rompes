@@ -6,18 +6,35 @@
 			?>
 			
 			<!-- Start home-about Area -->
-			<br><br>
+			<br><br><br><br>
+
+
+			<section class="banner-area relative" id="home" style="background: url(images/{{$q->gambar_depan}}) center;
+  background-size: cover;">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12">
+							<h6>Sejarah Mengenai Persilatan Rompes Si Pecut Betawai</h6>
+							<span class="bar"></span>
+							<h1 class="text-white">
+								
+								
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="home-about-area section-gap">
-				<div class="container-center" style="margin-left: 650px;">
-				<h1>About</h1>
-			</div><br><br>
+
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 home-about-left">
 							<img class="mx-auto d-block img-fluid" src="{{asset('images/'.$q->gambar_about)}}" alt="">
 						</div>
 						<div class="col-lg-6 home-about-right">
-							<h6 class="text-uppercase">Brand new app to blow your mind</h6>
+
 							<h1>We’ve made a life <br>
 							that will change you</h1>
 							<p>

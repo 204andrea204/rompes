@@ -1,6 +1,31 @@
 @extends('layouts.user')
 @section('content')
 
+<?php
+	$q = \App\Profile::where('id', 1)->first();
+
+?>
+			
+			<!-- Start service-page Area -->
+			<br><br><br>
+
+			<section class="banner-area relative" id="home" style="background: url(images/{{$q->gambar_depan}}) center;
+  background-size: cover;">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row fullscreen d-flex align-items-center justify-content-start">
+						<div class="banner-content col-lg-12">
+							<h6>Sejarah Mengenai Persilatan Rompes Si Pecut Betawai</h6>
+							<span class="bar"></span>
+							<h1 class="text-white">
+								
+								
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Start training Area -->
 			
 		<br><br>

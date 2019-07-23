@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Horse Club</title>
+		<title>Rompes Si Pecut Betawi</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -45,7 +45,7 @@
 			    		<div class="col-lg-4 menu-top-middle justify-content-center d-flex">
 							<a href="{{url('/')}}">
 								<center>
-								<img class="img-fluid" src="{{asset('cbi_user/img/CBI.png')}}" alt="" style="width: 25%;">	
+								<img class="img-fluid" src="{{asset('cbi_user/img/rompes.jpg')}}" alt="" style="width: 25%;">	
 								</center>
 							</a>			    			
 			    		</div>
@@ -62,7 +62,7 @@
 				        <ul class="nav-menu">
 				          <li><a href="{{url('/')}}">Home</a></li>
 				          <li><a href="{{url('about')}}">About</a></li>
-				          <li><a href="{{url('service')}}">Service</a></li>
+				          <li><a href="{{url('service')}}">Kegiatan</a></li>
 				          <li><a href="{{url('gallery')}}">Gallery</a></li>
 				          {{-- <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>

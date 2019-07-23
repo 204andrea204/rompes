@@ -23,6 +23,14 @@ Route::get('/images/{filename}', function ($filename)
 Route::get('/admin', function () {
     return view('admin.welcome');
 });
+
+Route::get('/admin/pelatihan2', function(){
+    return view('admin.pelatihan2');
+});
+Route::get('/admin/pelatihan', function(){
+    return view('admin.pelatihan');
+});
+
  
 Route::get('/admin/gallery', function(){
     return view('admin.gallery');
@@ -84,6 +92,19 @@ Route::group(['prefix' => 'gallery2'] , function(){
     Route::post('/save', 'GalleryController@savegallery2');
     Route::get('/delete/{id}', 'GalleryController@deletegallery2');
 });
+
+Route::group(['prefix' => 'pelatihan'] , function(){
+    Route::get('/', 'PelatihanController@indexpelatihan');
+    Route::get('/add', 'PelatihanController@addpelatihan');
+    Route::post('/save', 'PelatihanController@savepelatihan');
+    Route::get('/delete/{id}', 'PelatihanController@deletepelatihan');
+});
+Route::group(['prefix' => 'pelatihan2'] , function(){
+    Route::get('/', 'PelatihanController@indexpelatihan2');
+    Route::post('/save', 'PelatihanController@savepelatihan2');
+    Route::get('/delete/{id}', 'PelatihanController@deletepelatihan2');
+});
+
 
 
 Route::post('/admin/visimisi/update', 'VisimisiController@visimisi_update');
